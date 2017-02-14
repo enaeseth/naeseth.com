@@ -113,7 +113,7 @@ resource "aws_route53_record" "naeseth_smtp" {
 
 resource "aws_route53_record" "naeseth_keybase_verify" {
   zone_id = "${aws_route53_zone.naeseth.zone_id}"
-  name    = "naeseth.com"
+  name    = "_keybase.naeseth.com"
   type    = "TXT"
   ttl     = "10800"
   records = ["keybase-site-verification=V5-ZUwVzkgdS3vyPOaJInoZ-beLqOEJBEvbukHRZjtc"]
