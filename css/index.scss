@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  text-align: center;
+
+  > header {
+    margin: 3em 0;
+  }
+
+  h1 {
+    font-size: 4em;
+    margin: 0;
+  }
+
+  .social {
+    list-style: none;
+    padding: 0;
+    margin: 1.5em 0;
+
+    > li {
+      display: inline-block;
+      font-size: 2em;
+      margin: 0 0.5ex;
+
+      > a {
+        color: #444;
+        transition: color 0.2s;
+
+        &:hover {
+          color: #61D2D6;
+
+          &.email { color: #8BC6AE; }
+          &.facebook { color: #3B5998; }
+          &.twitter { color: #0BA3DF; }
+          &.github { color: #000; }
+          &.instagram { color: #8A3AB9; }
+          &.pinboard { color: #DB0000; }
+          &.spotify { color: #A0C11C; }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.posts {
+  list-style: none;
+  display: table;
+  box-sizing: border-box;
+  width: 100%;
+
+  > li {
+    display: table-row;
+
+    > * {
+      display: table-cell;
+      padding: 0.2em 1em;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    > time {
+      padding-left: 0;
+      width: 8em;
+      color: #666;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      text-align: right;
+    }
+
+    > a {
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media (max-width: 42em) {
+  main {
+    h1 {
+      font-size: 3em;
+    }
+
+    .social > li {
+      font-size: 1.7em;
+    }
+  }
+
+  .posts {
+    > li {
+      > time {
+        width: 6em;
+        font-size: 0.8em;
+      }
+    }
+  }
+}

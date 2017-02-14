@@ -1,0 +1,26 @@
+.error-container {
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .error {
+    text-align: center;
+
+    .icon {
+      font-size: 8em;
+    }
+
+    .code {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    .text {
+      font-size: 2em;
+      margin: 0;
+      color: #666;
+    }
+  }
+}

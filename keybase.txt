@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/enaeseth
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://naeseth.com
+  * I am enaeseth (https://keybase.io/enaeseth) on keybase.
+  * I have a public key with fingerprint E840 8BD0 D34F 9BB1 5604  68C5 F846 DCC3 1899 A1E2
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "e8408bd0d34f9bb1560468c5f846dcc31899a1e2",
+            "host": "keybase.io",
+            "key_id": "f846dcc31899a1e2",
+            "uid": "4cf8808aef459d83f26ce960991f3d00",
+            "username": "enaeseth"
+        },
+        "service": {
+            "hostname": "naeseth.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1412636788,
+    "expire_in": 157680000,
+    "prev": "805649cf23ca4c11c666d160013081b76ab2171153af99db3eefd999bdf62029",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.2
+Comment: https://keybase.io/crypto
+
+yML1AnicO8LLzMDF+MPtzmGJmQsfMZ4+8KGUIcRYoaRaKSk/pVLJqlopOxVMpWXm
+pacWFRRl5pUoWSmlWpgYWCSlGKQYm6RZJiUZmpoZmJhZJJumWZiYpSQnGxtaWFom
+GqYaKekoZeQXg3QAjUlKLE7Vy8wHigE58ZkpQFEs6kvBEibJaRYWBhaJqWkmppYp
+FsZpRmbJqZZmBpaWhmnGKQYGIIXFqUV5ibmpIOfkJaYWp5ZkKNXqKAFFyzKTU0Fu
+BlkNVQFVoJecnwvUWlCUX5KfnJ8DlMgoKSmwAukrqSwAKSxPTYqHGhGflJmXAvQ2
+UENZalFxZn6ekpUhUGVySSbITEMTQyMzYzNzCwsdpdSKgsyi1PhMkApTczMLAyAA
+WZNaBjTSwsDUzMQyOc3IODnRJNnQMNnMzCzF0MzAwNDYwMIwydwsMcnI0NzQ0NQ4
+Mc3SMiXJODU1LcXS0jIpJc3MyMDIUgnkqcK8fCUrc6AzE9OBRhZnpucllpQWpSrV
+HjoYw8LAyMXAxsoEijgGLk4BWHQG+fP/ZNxvvkGPWyS5MCGhMSpj7bNYM3fnL0sM
+FA9s5xJ+/WV9ZfHxpJqwdv+Fk0Qmtwdbhz9c77pw4a28/xm2AuEXa4Pd21nWxvM6
+h0ipWOw93c2x8r/N7uv1Vx57iyxlnuWb3G2q/UDXWt7HTGu23dHAuljj8Otbmhx4
++q8fKU+eoX7b/Nf/9a+My2/NEWdRnajEsdgpWq/TTPrOgr5nbv9yOux8f37rTfn2
+buYBy6izk12fz5Hg8/cT/r1HhKH9ydYCf32pXQt6Db3vuE732HUnfY+65imRqqlq
+2pzzOtffjFxuLxd49rjTZr6PryKvzRf/Pf0tq3Z6UOWkEzcUQhenbzoy2VyKe7JX
+rMqDD7abzmwQzf1h4nroiqqlctNJ3W/TJhb2Xp27ZWOcjqqwbFG6i4janrmTHxRr
+J7q1ea8935mhdfJc0MfL3Uk6tlb1q1TfXolyTZadsqTNofXBM66K07w/V12uk8g9
+kbKmc+fT3/IbVcJDIhP1J2pP/FiwsFV2I9sr1WNqiq/ceJsbqxeeFDLx/fns2tUF
+vgt/HPtv0bsyt/naUgGnNwbrbR7ay3H8yLgdOeWauXA7h6nS6vhjr0r3Lbica9TX
+13ZcIbpU98v11ngmFZ44kUCeo6YycyK2yQu3r/78WvnrGcY42dhpT08/WGpScf6E
+CIMFyxP3HcvnHha9+bfe5q5AmiZD5DnO67OU0v7OuxhStwQAfT+JLw==
+=S9HJ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/enaeseth
+
+==================================================================

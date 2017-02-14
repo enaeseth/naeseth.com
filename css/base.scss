@@ -1,0 +1,25 @@
+body {
+  font-family: "Lato";
+  font-weight: 300;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+a {
+  &:link, &:visited {
+    color: #1AA5BD;
+    text-decoration: none;
+
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+
+  &:hover {
+    color: #61D2D6;
+  }
+}
