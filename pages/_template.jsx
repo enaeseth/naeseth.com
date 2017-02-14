@@ -6,7 +6,7 @@ import {prefixLink} from 'gatsby-helpers'
 import {config} from 'config'
 import '../css/base'
 
-export default ({location, route, children}) => {
+export default ({location: {pathname: path}, route, children}) => {
   return (
     <div className="layout">
       <Helmet
@@ -14,6 +14,9 @@ export default ({location, route, children}) => {
         htmlAttributes={{
           prefix: "og: http://ogp.me/ns# article: http://ogp.me/ns/article#"
         }}
+        link={[
+          {rel: "canonical", href: `${config.root}${path}`},
+        ]}
         meta={[
           {property: 'og:site_name', content: config.siteTitle},
           {name: 'author', content: config.authorName},
