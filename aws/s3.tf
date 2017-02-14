@@ -61,3 +61,44 @@ resource "aws_s3_bucket" "naeseth-static" {
     target_prefix = "static.naeseth.com/"
   }
 }
+
+resource "aws_iam_user" "naeseth_deploy" {
+  name = "deploy"
+}
+
+resource "aws_iam_access_key" "naeseth_deploy" {
+  user    = "${aws_iam_user.naeseth_deploy.name}"
+  pgp_key = "keybase:enaeseth"
+}
+
+resource "aws_iam_user_policy" "naeseth_deploy" {
+  name   = "naeseth_deploy"
+  user   = "${aws_iam_user.naeseth_deploy.name}"
+  policy = "${data.aws_iam_policy_document.naeseth_deploy.json}"
+}
+
+data "aws_iam_policy_document" "naeseth_deploy" {
+  statement {
+    actions   = ["s3:ListAllMyBuckets", "s3:GetBucketLocation"]
+    resources = ["arn:aws:s3:::*"]
+  }
+
+  statement {
+    actions = [
+      "s3:ListBucket",
+      "s3:ListBucketVersions",
+      "s3:GetObject",
+      "s3:GetObject*",
+      "s3:PutObject",
+      "s3:PutObject*",
+      "s3:DeleteObject",
+      "s3:DeleteObject*",
+      "s3:RestoreObject",
+    ]
+
+    resources = [
+      "${aws_s3_bucket.naeseth.arn}",
+      "${aws_s3_bucket.naeseth.arn}/*",
+    ]
+  }
+}
