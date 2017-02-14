@@ -25,7 +25,7 @@ resource "aws_cloudfront_distribution" "naeseth" {
     }
   }
 
-  aliases = ["www.naeseth.com"]
+  aliases = ["naeseth.com", "www.naeseth.com"]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
