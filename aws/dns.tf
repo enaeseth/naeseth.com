@@ -8,8 +8,8 @@ resource "aws_route53_record" "naeseth_root" {
   type    = "A"
 
   alias {
-    zone_id                = "${aws_s3_bucket.naeseth.hosted_zone_id}"
-    name                   = "${aws_s3_bucket.naeseth.website_domain}"
+    zone_id                = "${aws_cloudfront_distribution.naeseth.hosted_zone_id}"
+    name                   = "${aws_cloudfront_distribution.naeseth.domain_name}"
     evaluate_target_health = false
   }
 }
@@ -20,8 +20,8 @@ resource "aws_route53_record" "naeseth_www" {
   type    = "A"
 
   alias {
-    zone_id                = "${aws_s3_bucket.www-naeseth.hosted_zone_id}"
-    name                   = "${aws_s3_bucket.www-naeseth.website_domain}"
+    zone_id                = "${aws_cloudfront_distribution.naeseth.hosted_zone_id}"
+    name                   = "${aws_cloudfront_distribution.naeseth.domain_name}"
     evaluate_target_health = false
   }
 }
