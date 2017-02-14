@@ -34,7 +34,8 @@ resource "aws_cloudfront_distribution" "naeseth" {
     compress         = true
 
     forwarded_values {
-      query_string = false
+      query_string            = true
+      query_string_cache_keys = ["t"]
 
       cookies {
         forward = "none"

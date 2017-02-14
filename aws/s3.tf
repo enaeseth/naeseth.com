@@ -9,6 +9,7 @@ resource "aws_s3_bucket" "naeseth" {
 
   website {
     index_document = "index.html"
+    error_document = "404/index.html"
   }
 
   logging {
