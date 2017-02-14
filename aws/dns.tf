@@ -110,3 +110,19 @@ resource "aws_route53_record" "naeseth_smtp" {
   ttl     = "3600"
   records = ["smtp.google.com"]
 }
+
+resource "aws_route53_record" "naeseth_gandi_verify" {
+  zone_id = "${aws_route53_zone.naeseth.zone_id}"
+  name    = "7B0CBA59164CAA6C26E428647CFD29B3.naeseth.com"
+  type    = "CNAME"
+  ttl     = "10800"
+  records = ["DDF01740E5E997BBA352DEE027A9F7E46A9B7391.comodoca.com"]
+}
+
+resource "aws_route53_record" "www_naeseth_gandi_verify" {
+  zone_id = "${aws_route53_zone.naeseth.zone_id}"
+  name    = "7B0CBA59164CAA6C26E428647CFD29B3.www.naeseth.com"
+  type    = "CNAME"
+  ttl     = "10800"
+  records = ["DDF01740E5E997BBA352DEE027A9F7E46A9B7391.comodoca.com"]
+}
