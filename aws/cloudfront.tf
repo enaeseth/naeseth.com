@@ -54,6 +54,12 @@ resource "aws_cloudfront_distribution" "naeseth" {
     minimum_protocol_version = "TLSv1"
   }
 
+  logging_config {
+    bucket          = "${aws_s3_bucket.logs.bucket_domain_name}"
+    prefix          = "cloudfront/"
+    include_cookies = false
+  }
+
   restrictions {
     geo_restriction {
       restriction_type = "none"
