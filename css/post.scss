@@ -4,12 +4,12 @@ body {
 
 .masthead {
   height: 230px;
-  background-color: #88C;
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
 
   #first-burn > & {
+    background-color: #6281A1;
     background-image: url('../pages/posts/2014-09-09-first-burn/temple-cover.jpg');
   }
 }
