@@ -7,15 +7,6 @@ import moment from 'moment'
 import {config} from 'config'
 import '../css/index'
 
-const Social = ({network, href, icon = network}) => (
-  <li>
-    <a className={network} href={href}>
-      <i className={`fa fa-${icon}`} />
-      <span className="sr-only">{network}</span>
-    </a>
-  </li>
-)
-
 export default ({route}) => {
   return (
     <main>
@@ -37,6 +28,15 @@ export default ({route}) => {
     </main>
   )
 }
+
+const Social = ({network, href, icon = network}) => (
+  <li>
+    <a className={network} href={href}>
+      <i className={`fa fa-${icon}`} />
+      <span className="sr-only">{network}</span>
+    </a>
+  </li>
+)
 
 const Posts = ({pages}) => {
   const posts = pages
