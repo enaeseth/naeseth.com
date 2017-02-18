@@ -3,7 +3,7 @@ body {
   padding: 0;
 }
 
-main {
+#index {
   text-align: center;
 
   > header {
@@ -82,7 +82,7 @@ main {
 }
 
 @media (max-width: 42em) {
-  main {
+  #index {
     h1 {
       font-size: 3em;
     }

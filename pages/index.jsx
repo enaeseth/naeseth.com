@@ -9,7 +9,7 @@ import '../css/index'
 
 export default ({route}) => {
   return (
-    <main>
+    <main id="index">
       <header>
         <h1>Eric Naeseth</h1>
         <ul className="social">
