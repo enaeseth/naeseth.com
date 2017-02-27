@@ -3,6 +3,7 @@ layout: post
 path: /first-burn/
 title: A story from my first Burn
 date: '2014-09-09'
+image: temple-square.jpg
 masthead: on
 ---
 
