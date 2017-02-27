@@ -1,3 +1,5 @@
+@import './defs.scss';
+
 body {
   margin: 0;
   padding: 0;
@@ -30,7 +32,7 @@ body {
         transition: color 0.2s;
 
         &:hover {
-          color: #61D2D6;
+          color: $link-hover-color;
 
           &.email { color: #8BC6AE; }
           &.facebook { color: #3B5998; }
@@ -41,6 +43,22 @@ body {
           &.spotify { color: #A0C11C; }
         }
       }
+    }
+  }
+
+  .work {
+    font-size: 1.3em;
+
+    > a:link, > a:visited {
+      color: #222;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+
+    i.fa {
+      margin-right: 0.5ex;
     }
   }
 }

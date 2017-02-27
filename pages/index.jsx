@@ -21,6 +21,12 @@ export default ({route}) => {
           <Social network="pinboard" icon="bookmark" href="https://pinboard.in/u:enaeseth" />
           <Social network="twitter" href="https://twitter.com/enaeseth" />
         </ul>
+        <div className="work">
+          <a href="/resume/">
+            <i className="fa fa-briefcase" />
+            résumé
+          </a>
+        </div>
       </header>
       <div className="content">
         <Posts pages={route.pages} />

@@ -1,3 +1,9 @@
+@import './defs.scss';
+
+html, body {
+  min-height: 100vh;
+}
+
 body {
   font-family: "Lato";
   font-weight: 300;
@@ -11,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   &:link, &:visited {
-    color: #1AA5BD;
+    color: $link-color;
     text-decoration: none;
 
     -webkit-transition: color 0.2s;
@@ -20,6 +26,6 @@ a {
   }
 
   &:hover {
-    color: #61D2D6;
+    color: $link-hover-color;
   }
 }

@@ -1,0 +1,165 @@
+@import './defs.scss';
+
+#resume {
+  box-sizing: content-box;
+  max-width: 45em;
+  margin: 3em auto;
+  padding: 0 2em;
+
+  h1 {
+    a:link, a:visited {
+      color: #222;
+    }
+
+    a:hover {
+      color: $link-hover-color;
+    }
+  }
+
+  > header {
+    display: flex;
+
+    > h1 {
+      flex-grow: 1;
+      font-size: 3em;
+      margin: 0
+    }
+
+    > .contact {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0 1em;
+
+      > li {
+        font-size: 1.1em;
+        margin: 0 0 0.3em 0;
+
+        > a {
+          > i, > span {
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          > i {
+            margin-right: 0.3ex;
+            height: 1em;
+            font-size: 1.1em;
+          }
+
+          &:hover > .label {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .nutshell {
+    > ul {
+      list-style: none;
+      margin: 1em 0 0 0;
+      padding: 0;
+
+      > li {
+        display: block;
+        font-size: 1.1em;
+        margin: 0 0 0.5em 0;
+      }
+    }
+  }
+
+  .position {
+    margin: 1.5em 0 0 0;
+    border-top: 2px solid #CCC;
+    padding-top: 0.5em;
+
+    > header {
+      > * {
+        display: inline-block;
+        margin: 0 0.25em;
+      }
+
+      > h1 {
+        font-size: 2em;
+        margin-left: 0;
+      }
+
+      > h2 {
+        font-size: 1.5em;
+        font-weight: 300;
+      }
+    }
+
+    .about {
+      font-size: 1.1em;
+      list-style: none;
+      margin: 1em 0;
+      padding: 0;
+
+      > li {
+        margin: 0.5em 0;
+      }
+    }
+  }
+
+  > footer {
+    color: #444;
+    margin: 2em 0;
+    text-align: center;
+
+    i.fa {
+      margin-left: 0.3ex;
+    }
+  }
+}
+
+@media (max-width: 45em) {
+  #resume {
+    .position {
+      > header {
+        > h1 {
+          font-size: 1.8em;
+        }
+
+        > h2 {
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 40em) {
+  #resume {
+    max-width: none;
+    margin: 2em 1em;
+    padding: 0;
+    
+    > header {
+      display: block;
+
+      > .contact {
+        display: flex;
+        margin: 0.25em 0;
+
+        > * {
+          flex-grow: 1;
+          margin: 0 1ex;
+        }
+      }
+    }
+  
+    .position {
+      > header {
+        > * {
+          display: block;
+          margin: 0;
+        }
+
+        > h2 {
+          margin: -0.1em 0 0.2em 0;
+        }
+      }
+    }
+  }
+}
