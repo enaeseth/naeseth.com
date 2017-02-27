@@ -33,7 +33,7 @@ module.exports = React.createClass({
 
     return (
       <div id={id} className="post">
-        <Helmet meta={meta} />
+        <Helmet title={`${post.title} | ${config.siteTitle}`} meta={meta} />
         {post.masthead && <div className="masthead"></div>}
         <article>
           <header>
