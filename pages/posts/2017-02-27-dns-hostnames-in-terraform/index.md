@@ -64,6 +64,6 @@ Enjoy!
 [cidr]: https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
 [sg]: https://www.terraform.io/docs/providers/aws/r/security_group.html
 [tada]: https://github.com/union-wtf/terraform-provider-dns
-[release]: https://github.com/union-wtf/terraform-provider-dns/release/latest
+[release]: https://github.com/union-wtf/terraform-provider-dns/releases/latest
 [trc]: https://www.terraform.io/docs/plugins/basics.html
 [setup]: https://github.com/union-wtf/terraform-provider-dns/blob/master/install.sh
