@@ -28,9 +28,19 @@ article {
 
   p {
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: 1.3em;
     line-height: 1.4;
     text-align: justify;
+
+    code {
+      font-size: 0.8em;
+    }
+  }
+
+  pre {
+    font-size: 0.8em;
+    margin: 1em 0;
+    padding: 1ex 1em;
   }
 
   footer {

@@ -29,3 +29,17 @@ a {
     color: $link-hover-color;
   }
 }
+
+pre, code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+pre {
+  &, & code {
+    font-weight: 400;
+  }
+}
+
+code {
+  font-weight: 300;
+}

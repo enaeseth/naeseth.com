@@ -1,5 +1,5 @@
 import React from 'react'
-import 'css/markdown-styles.css'
+import 'css/markdown-styles.scss'
 import Helmet from 'react-helmet'
 import moment from 'moment'
 

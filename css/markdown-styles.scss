@@ -1,0 +1,229 @@
+.warning {
+  color: #9F6000;
+  background-color: #FEEFB3;
+  padding: 18px;
+}
+.warning:before {
+  content:'\26A0';
+  margin-right: 9px;
+}
+
+.rfc-page pre {
+  font-family: inherit;
+}
+
+// https://github.com/crodriguez1a/hljs-themes
+// Hybrid theme
+
+$color_mirage_approx: #282c34;
+$color_pumice_approx: #c5c8c6;
+$color_rob_roy_approx: #f0c674;
+$color_pale_sky_approx: #707880;
+$color_chestnut_rose_approx: #cc6666;
+$color_wild_willow_approx: #b5bd68;
+$color_amethyst_smoke_approx: #b294bb;
+$color_bali_hai_approx: #81a2be;
+$color_neptune_approx: #8abeb7;
+$color_di_serria_approx: #de935f;
+
+pre {
+  background: $color_mirage_approx;
+  display: block;
+  overflow-x: auto;
+  padding: 0.5rem;
+  color: $color_pumice_approx;
+
+  .hljs-title {
+  	color: $color_rob_roy_approx;
+  }
+  .hljs-name {
+  	color: $color_rob_roy_approx;
+  }
+  .hljs-comment {
+  	color: $color_pale_sky_approx;
+  }
+  .hljs-meta {
+  	color: $color_pale_sky_approx;
+  	.hljs-keyword {
+  		color: $color_pale_sky_approx;
+  	}
+  }
+  .hljs-number {
+  	color: $color_chestnut_rose_approx;
+  }
+  .hljs-symbol {
+  	color: $color_chestnut_rose_approx;
+  }
+  .hljs-literal {
+  	color: $color_chestnut_rose_approx;
+  }
+  .hljs-deletion {
+  	color: $color_chestnut_rose_approx;
+  }
+  .hljs-link {
+  	color: $color_chestnut_rose_approx;
+  }
+  .hljs-string {
+  	color: $color_wild_willow_approx;
+  }
+  .hljs-doctag {
+  	color: $color_wild_willow_approx;
+  }
+  .hljs-addition {
+  	color: $color_wild_willow_approx;
+  }
+  .hljs-regexp {
+  	color: $color_wild_willow_approx;
+  }
+  .hljs-selector-attr {
+  	color: $color_wild_willow_approx;
+  }
+  .hljs-selector-pseudo {
+  	color: $color_wild_willow_approx;
+  }
+  .hljs-attribute {
+  	color: $color_amethyst_smoke_approx;
+  }
+  .hljs-code {
+  	color: $color_amethyst_smoke_approx;
+  }
+  .hljs-selector-id {
+  	color: $color_amethyst_smoke_approx;
+  }
+  .hljs-keyword {
+  	color: $color_bali_hai_approx;
+  }
+  .hljs-selector-tag {
+  	color: $color_bali_hai_approx;
+  }
+  .hljs-bullet {
+  	color: $color_bali_hai_approx;
+  }
+  .hljs-tag {
+  	color: $color_bali_hai_approx;
+  }
+  .hljs-subst {
+  	color: $color_neptune_approx;
+  }
+  .hljs-variable {
+  	color: $color_neptune_approx;
+  }
+  .hljs-template-tag {
+  	color: $color_neptune_approx;
+  }
+  .hljs-template-variable {
+  	color: $color_neptune_approx;
+  }
+  .hljs-type {
+  	color: $color_di_serria_approx;
+  }
+  .hljs-built_in {
+  	color: $color_di_serria_approx;
+  }
+  .hljs-builtin-name {
+  	color: $color_di_serria_approx;
+  }
+  .hljs-quote {
+  	color: $color_di_serria_approx;
+  }
+  .hljs-section {
+  	color: $color_di_serria_approx;
+  }
+  .hljs-selector-class {
+  	color: $color_di_serria_approx;
+  }
+  .hljs-emphasis {
+  	font-style: italic;
+  }
+  .hljs-strong {
+  	font-weight: bold;
+  }
+}
+
+/*
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+*/
